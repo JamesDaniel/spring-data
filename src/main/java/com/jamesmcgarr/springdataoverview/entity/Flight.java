@@ -12,7 +12,7 @@ public class Flight {
     private Long id;
     private String origin;
     private String destination;
-    private LocalDateTime scheduledAd;
+    private LocalDateTime scheduledAt;
 
     public Long getId() {
         return id;
@@ -38,12 +38,12 @@ public class Flight {
         this.destination = destination;
     }
 
-    public LocalDateTime getScheduledAd() {
-        return scheduledAd;
+    public LocalDateTime getScheduledAt() {
+        return scheduledAt;
     }
 
-    public void setScheduledAd(LocalDateTime scheduledAd) {
-        this.scheduledAd = scheduledAd;
+    public void setScheduledAt(LocalDateTime scheduledAt) {
+        this.scheduledAt = scheduledAt;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Flight {
                 "id=" + id +
                 ", origin='" + origin + '\'' +
                 ", destination='" + destination + '\'' +
-                ", scheduledAd=" + scheduledAd +
+                ", scheduledAt=" + scheduledAt +
                 '}';
     }
 }

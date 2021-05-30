@@ -24,7 +24,7 @@ class CrudTests {
 		final Flight flight = new Flight();
 		flight.setOrigin("Amsterdam");
 		flight.setDestination("New York");
-		flight.setScheduledAd(LocalDateTime.parse("2011-12-13T12:12:00"));
+		flight.setScheduledAt(LocalDateTime.parse("2011-12-13T12:12:00"));
 
 		flightRepository.save(flight);
 

@@ -4,7 +4,6 @@ import com.jamesmcgarr.springdataoverview.entity.Flight;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.persistence.EntityManager;
@@ -25,7 +24,7 @@ class SpringDataOverviewApplicationTests {
 		final Flight flight = new Flight();
 		flight.setOrigin("Amsterdam");
 		flight.setDestination("New York");
-		flight.setScheduledAd(LocalDateTime.parse("2011-12-13T12:12:00"));
+		flight.setScheduledAt(LocalDateTime.parse("2011-12-13T12:12:00"));
 
 		entityManager.persist(flight);
 
